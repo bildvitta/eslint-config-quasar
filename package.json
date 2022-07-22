@@ -1,0 +1,25 @@
+{
+  "name": "@bildvitta/eslint-config",
+  "version": "1.0.0-beta.0",
+  "description": "Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta.",
+  "author": "Bild & Vitta",
+  "main": "index.js",
+  "keywords": [
+    "eslint-config",
+    "eslintconfig",
+    "eslint"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0-1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-quasar": "^1.1.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "eslint-webpack-plugin": "^3.1.1"
+  }
+}
