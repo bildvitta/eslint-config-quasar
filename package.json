@@ -1,5 +1,5 @@
 {
-  "name": "@bildvitta/eslint-config",
+  "name": "@bildvitta/eslint-config-quasar",
   "version": "1.0.0-beta.0",
   "description": "Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta.",
   "author": "Bild & Vitta",

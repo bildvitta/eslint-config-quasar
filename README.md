@@ -1,4 +1,4 @@
-ESLint Config - Bild & Vitta
+ESLint Quasar - Bild & Vitta
 ===
 
 Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta. 
@@ -15,7 +15,7 @@ Regras padrões inclusas na biblioteca:
 
 ## Instalação
 ```bash
-npm i @bildvitta/eslint-config -D
+npm i @bildvitta/eslint-config-quasar -D
 ```
 
 Após instalação, crie o arquivo `.eslintrc.js` no diretório raiz do projeto com a seguinte configuração:
@@ -23,7 +23,7 @@ Após instalação, crie o arquivo `.eslintrc.js` no diretório raiz do projeto 
 ```js
 module.exports = {
   extends: [
-    "@bildvitta/eslint-config"
+    "@bildvitta/eslint-config-quasar"
   ]
 }
 ```
