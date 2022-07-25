@@ -100,12 +100,7 @@ module.exports = {
     'vue/key-spacing': ['error', { beforeColon: false }],
     'vue/prefer-template': ['error'],
     'vue/padding-line-between-blocks': ['error', 'always'],
-    'vue/new-line-between-multi-line-property': [
-      'error',
-      {
-        minLineOfMultilineProperty: 2
-      }
-    ],
+    'vue/new-line-between-multi-line-property': 'off',
     'vue/component-tags-order': [
       'error',
       {
