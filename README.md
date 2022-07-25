@@ -42,6 +42,37 @@ Após, crie o arquivo `.eslintignore` no diretório raiz do projeto com a seguin
 .eslintrc.js
 ```
 
+## Utilização
+O ESLint provém de um comando para executar a validação de todos os arquivos do projeto:
+
+```bash
+npx eslint --ext .js,.vue ./
+```
+
+Para realizar os ajustes necessários automaticamente:
+  
+```bash
+npx eslint --ext .js,.vue ./ --fix
+```
+
+### Configuração para o Visual Studio Code
+
+É importante que o editor de texto esteja devidamente configurado para executar as validações do ESLint automaticamente. 
+
+Para isto, realize a instalação da extensão [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) no Visual Studio Code e após abra as configurações do usuário:
+* Abra a paleta de comandos (Ctrl+Shift+P / Cmd+Shift+P);
+* Digite "Abrir configurações";
+* Você é apresentado com duas opções, escolha "Abrir configurações (JSON)";
+* No JSON insira a configuração abaixo:
+
+  ```json
+  {
+    "editor.codeActionsOnSave" : {
+      "source.fixAll" : true
+    }
+  }
+  ```
+
 ## Observação
 Com o uso desta biblioteca não é necessário adicionar nenhuma dependência externa do ESLint no arquivo `package.json`.
 
