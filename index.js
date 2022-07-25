@@ -38,7 +38,11 @@ module.exports = {
       'error',
       {
         code: 120,
-        tabWidth: 2
+        tabWidth: 2,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true
       }
     ],
     'arrow-parens': ['error', 'as-needed'],
