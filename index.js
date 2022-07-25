@@ -27,10 +27,9 @@ module.exports = {
     ga: 'readonly',
     __statics: 'readonly',
     process: 'readonly',
-    chrome: 'readonly'
-    // If you are using a mobile development environment, uncomment these:
-    // cordova: 'readonly',
-    // Capacitor: 'readonly',
+    chrome: 'readonly',
+    cordova: 'readonly',
+    Capacitor: 'readonly',
   },
 
   rules: {
