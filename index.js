@@ -39,6 +39,7 @@ module.exports = {
       {
         code: 120,
         tabWidth: 2,
+        ignoreComments: true,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
@@ -65,7 +66,7 @@ module.exports = {
     // Promise
     'prefer-promise-reject-errors': 'off',
 
-    // Vue
+    // Vue extra rules
     'vue/singleline-html-element-content-newline': [
       'error',
       {
@@ -90,7 +91,6 @@ module.exports = {
         ignores: []
       }
     ],
-    'vue/no-v-html': 'off',
     'vue/attributes-order': ['error', { alphabetical: true }],
     'vue/block-spacing': ['error', 'always'],
     'vue/no-reserved-component-names': ['error'],
@@ -100,7 +100,6 @@ module.exports = {
     'vue/key-spacing': ['error', { beforeColon: false }],
     'vue/prefer-template': ['error'],
     'vue/padding-line-between-blocks': ['error', 'always'],
-    'vue/new-line-between-multi-line-property': 'off',
     'vue/component-tags-order': [
       'error',
       {
@@ -157,6 +156,11 @@ module.exports = {
         ignoreIncludesComment: false
       }
     ],
-    'vue/no-extra-parens': ['error']
+    'vue/no-extra-parens': ['error'],
+
+    // Vue disabled rules
+    'vue/valid-next-tick': 'off',
+    'vue/no-v-html': 'off',
+    'vue/new-line-between-multi-line-property': 'off'
   }
 }
