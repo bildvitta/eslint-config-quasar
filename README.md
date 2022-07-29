@@ -23,7 +23,7 @@ Após instalação, crie o arquivo `.eslintrc.js` no diretório raiz do projeto 
 ```js
 module.exports = {
   extends: [
-    "@bildvitta/eslint-config-quasar"
+    '@bildvitta/eslint-config-quasar'
   ]
 }
 ```

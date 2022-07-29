@@ -7,6 +7,10 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Sobre os "BREAKING CHANGES"
 Podemos ter pequenas breaking changes sem alterar o `major` version, apesar de serem pequenas, podem alterar o comportamento da funcionalidade caso não seja feita uma atualização, **preste muita atenção** nas breaking changes dentro das versões quando existirem.
 
+## [1.0.0-beta.5] - 29-07-2022
+### Adicionado
+- Adicionado a regra `vue/func-call-spacing` com o valor `['error', 'never']`.
+
 ## [1.0.0-beta.4] - 26-07-2022
 ### Modificado
 - Modificado a regra `vue/valid-next-tick` para `off`.
