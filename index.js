@@ -157,6 +157,7 @@ module.exports = {
       }
     ],
     'vue/no-extra-parens': ['error'],
+    'vue/func-call-spacing': ['error', 'never'],
 
     // Vue disabled rules
     'vue/valid-next-tick': 'off',
