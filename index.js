@@ -162,6 +162,7 @@ module.exports = {
     // Vue disabled rules
     'vue/valid-next-tick': 'off',
     'vue/no-v-html': 'off',
+    'vue/no-v-text-v-html-on-component': 'off',
     'vue/new-line-between-multi-line-property': 'off'
   }
 }
