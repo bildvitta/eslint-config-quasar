@@ -1,9 +1,10 @@
 {
   "name": "@bildvitta/eslint-config-quasar",
-  "version": "1.0.0",
+  "version": "2.0.0-beta.0",
   "description": "Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta.",
   "author": "Bild & Vitta",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "eslint-config",
     "eslintconfig",
@@ -14,17 +15,15 @@
     "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
-  "dependencies": {
-    "@babel/eslint-parser": "^7.18.9",
-    "ajv": "^8.11.0",
-    "eslint": "^8.20.0",
-    "eslint-config-standard": "^17.0.0-1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-quasar": "^1.1.0",
-    "eslint-plugin-vue": "^9.2.0",
-    "eslint-webpack-plugin": "^3.1.1"
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "globals": "^16.2.0",
+    "neostandard": "^0.12.1",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "peerDependencies": {
+    "@quasar/app-vite": "^2.2.0"
   }
 }
