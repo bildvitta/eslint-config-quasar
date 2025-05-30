@@ -95,7 +95,7 @@ export default defineConfig([
       'arrow-parens': ['error', 'as-needed'],
       'one-var': ['error', 'never'],
       'multiline-ternary': 'off',
-      'no-console': isProduction ? 'error' : 'off',
+      'no-console': isProduction ? ['error', { allow: ['error'] }] : 'off',
       'no-debugger': isProduction ? 'error' : 'off',
       'no-void': 'off',
       'comma-dangle': ['error', 'never'],
