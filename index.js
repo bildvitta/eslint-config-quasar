@@ -108,6 +108,7 @@ export default defineConfig([
       'import/named': 'error',
       'import/namespace': 'error',
       'import/no-extraneous-dependencies': 'off',
+      'import/no-named-as-default': 'off',
       'import/no-unresolved': 'off',
 
       // Promise
