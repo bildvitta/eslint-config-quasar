@@ -7,6 +7,9 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Sobre os "BREAKING CHANGES"
 Podemos ter pequenas breaking changes sem alterar o `major` version, apesar de serem pequenas, podem alterar o comportamento da funcionalidade caso não seja feita uma atualização, **preste muita atenção** nas breaking changes dentro das versões quando existirem.
 
+## [2.0.0-beta.4] - 29/07/2026
+- Atualizado peerDependency `"@quasar/app-vite"` para versão 3.2.0.
+
 ## [2.0.0-beta.3] - 10/06/2025
 ### Modificado
 - nova configuração `'import/no-named-as-default': 'off'`.
