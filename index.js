@@ -8,7 +8,7 @@ import pluginQuasar from '@quasar/app-vite/eslint'
 import neostandard from 'neostandard'
 import importPlugin from 'eslint-plugin-import'
 
-const isProduction = import.meta.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production'
 
 export default defineConfig([
   {
