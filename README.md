@@ -1,45 +1,43 @@
 ESLint Quasar - Bild & Vitta
 ===
 
-Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta. 
-
-Regras padrões inclusas na biblioteca:
-* [ESLint Standard](https://github.com/standard/eslint-config-standard)
-* [ESLint Vue (essential, recommended e strongly recommended)](https://github.com/vuejs/eslint-plugin-vue)
-* [ESLint Quasar](https://github.com/quasarframework/eslint-plugin-quasar)
-* Regras customizadas para projetos Bild & Vitta
+Biblioteca com as configurações padrões do ESLint para projetos Bild & Vitta.
 
 ## Requisitos
 * Quasar v2
+* Quasar App Vite v2
 * Vue v3
+
+Regras padrões inclusas na biblioteca:
+```json
+{
+  "@eslint/js": "^9.27.0",
+  "eslint": "^9.27.0",
+  "eslint-plugin-vue": "^10.1.0",
+  "globals": "^16.2.0",
+  "neostandard": "^0.12.1",
+  "eslint-plugin-import": "^2.31.0"
+}
+```
 
 ## Instalação
 ```bash
 npm i @bildvitta/eslint-config-quasar -D
 ```
 
-Após instalação, crie o arquivo `.eslintrc.js` no diretório raiz do projeto com a seguinte configuração:
+Após instalação, crie o arquivo `eslint.config.js` no diretório raiz do projeto com a seguinte configuração:
 
 ```js
-module.exports = {
-  extends: [
-    '@bildvitta/eslint-config-quasar'
-  ]
-}
-```
+import { defineConfig } from 'eslint/config'
 
-Após, crie o arquivo `.eslintignore` no diretório raiz do projeto com a seguinte configuração:
+import bildvittaConfig from '@bildvitta/eslint-config-quasar'
 
-```
-/.quasar
-/dist
-/node_modules
+export default defineConfig([
+  {
+    extends: [bildvittaConfig]
+  }
+])
 
-/src-bex/www
-/src-capacitor
-/src-cordova
-
-.eslintrc.js
 ```
 
 ## Utilização
@@ -50,7 +48,7 @@ npx eslint --ext .js,.vue ./
 ```
 
 Para realizar os ajustes necessários automaticamente:
-  
+
 ```bash
 npx eslint --ext .js,.vue ./ --fix
 ```
@@ -65,13 +63,13 @@ Para isto, realize a instalação da extensão [ESLint](https://marketplace.visu
 * Você é apresentado com duas opções, escolha "Abrir configurações (JSON)";
 * No JSON insira a configuração abaixo:
 
-  ```json
-  {
-    "editor.codeActionsOnSave" : {
-      "source.fixAll" : true
-    }
+```json
+{
+  "editor.codeActionsOnSave" : {
+    "source.fixAll" : true
   }
-  ```
+}
+```
 
 ## Observação
 Com o uso desta biblioteca não é necessário adicionar nenhuma dependência externa do ESLint no arquivo `package.json`.

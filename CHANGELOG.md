@@ -7,6 +7,33 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Sobre os "BREAKING CHANGES"
 Podemos ter pequenas breaking changes sem alterar o `major` version, apesar de serem pequenas, podem alterar o comportamento da funcionalidade caso não seja feita uma atualização, **preste muita atenção** nas breaking changes dentro das versões quando existirem.
 
+## Não publicado
+### Modificado
+- Atualizado dependências para suporte a `"@quasar/app-vite": 3.2.0`.
+
+## [2.0.0-beta.4] - 29/07/2026
+### Modificado
+- Atualizado peerDependency `"@quasar/app-vite"` para versão 3.2.0.
+
+## [2.0.0-beta.3] - 10/06/2025
+### Modificado
+- nova configuração `'import/no-named-as-default': 'off'`.
+
+## [2.0.0-beta.2] - 30/05/2025
+### Modificado
+- Configurado regra `no-console` para permitir `console.error` em produção enquanto bloqueia outros métodos do console.
+
+## [2.0.0-beta.1] - 28/05/2025
+### Modificado
+- modificado "devDependencies" para "dependencies".
+
+## [2.0.0-beta.0] - 28/05/2025
+## BREAKING CHANGES
+- Dropado suporte para webpack e agora só suporta quasar-app-vite v2.
+
+### Modificado
+- Modificações necessárias para dar suporte ao quasar-app-vite v2, as regras continuam as mesmas.
+
 ## [1.0.0] - 19-07-2023
 Lançando versão stable
 
